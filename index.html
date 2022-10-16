@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Codificador de Mensagens</title>
+    <link rel = "shortcut icon" type = "imagem/x-icon" href = "/img/icon.png"/>
+</head>
+
+<body>
+
+    <div class="banner">
+        <video autoplay muted loop>
+            <source src="img/geometry.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <div id="top">
+        <div class="container">
+            <div id="header">
+                <ul id="menutop">
+                  <li><a href="#tradutor">codifique</a></li>
+                  <li><a href="#sobreoscodigos">sobre os códigos</a></li>
+                </ul>
+
+            </div>
+
+            <div id="titulo">
+                <h1>Codificador de mensagem</h1>
+                <p id="subtitulo">Codifique suas mensagens em códigos</p>
+                <p id="explicacao">O processo de codificação é encontrado tanto em ações humanas primitivas, como na linguagem e na escrita, quanto nas tecnologias contemporâneas.</p>
+
+            </div>
+
+        </div>
+        <div id="gradiente">
+
+        </div>
+    </div>
+
+    <div id="tradutor">
+        <div class="container">
+            <div id="tradutor1">
+            <h2>.codifique sua mensagem</h2>
+
+            <div id="metodoinp">
+            <fieldset >
+                <select id="selecao">
+                  <option value="selecione">Selecione o método</option>
+                  <option value="cesar">Cifra de César</option>
+                  <option value="bs64">Base64</option>
+                </select>
+    
+                <div class="passo">
+                  <label for="passo"> Chave de codificação </label>
+                  <input type="number" name="passo" min="1" max="25" id="escolha-passo" checked/>
+                </div>
+              </fieldset>
+            </div>
+
+            <div id="inp">
+                <fieldset>
+                    <label for="radio-codificar"><input type="radio" value="codificar" name="code" id="radio-codificar" checked/>Codificar</label>
+                    <label for="radio-decodificar"><input type="radio" value="decodificar" name="code" id="radio-decodificar"/>Decodificar</label>
+                </fieldset>
+            </div>
+    
+            
+
+        </div>
+
+            <form>
+
+                <label for="mensagem"></label>
+                <textarea id="mensagem" placeholder=".digite sua mensagem aqui" class="input-padrao1" ></textarea>
+                <textarea id="mensagemFinal" placeholder=".resposta" class="input-padrao2" ></textarea>
+                </fieldset>
+
+            <div id="">
+                 <button class="but">Codificar Mensagem!</button>
+            </div>
+               
+      
+
+              </form>
+        </div>
+    </div>
+
+    <div id="sobreoscodigos">
+        <div class="container">
+            <h2>.sobre os códigos</h2>
+
+            <div id="explicacodigos">
+                <div style="width: 10%; float: left;">
+                    <h3>.cifra de César</h3>
+                </div>
+                <div style="width: 40%; float: left;">
+                    <p>Júlio César, imperador romano de 100 a.C. a 44 a.C., utilizava um código para proteger as mensagens enviadas a seus generais. Assim, se a mensagem caísse em mãos inimigas, a informação não poderia ser compreendida. Cada letra do alfabeto era substituída pela letra três posições à frente, ou seja, o “A” era substituído pelo “D”, o “B” pelo “E”, o “C” pelo “F”, e assim sucessivamente. Qualquer código que tenha esse padrão é considerado uma Cifra de César, também conhecida como Código de César.</p>
+                </div>
+
+                <div style="width: 10%; float: left;">
+                    <h3>.base 64</h3>
+                </div>
+                <div style="width: 40%; float: left;">
+                    <p>Base64 é um algoritmo de codificação (encoding) que permite transformar qualquer caractere de qualquer idioma em um alfabeto que consiste em letras latinas, dígitos e sinais. Com isso podemos converter caracteres especiais como os logogramas chineses, emoji e até imagens em uma sequência “legível” (para qualquer computador), que pode ser salvo e/ou transferido para qualquer outro lugar. É utilizado frequentemente para transmitir dados binários por meio de transmissões que lidam apenas com texto, como, por exemplo, para enviar imagens e arquivos em anexo por e-mail.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="rodape">
+        <div class="container">
+            <p>Desenvolvido por Jenifer Mattei</p>
+            <p style="float: right;">© Todos os direitos reservados.</p>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
